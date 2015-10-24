@@ -21,6 +21,7 @@
   "dependencies": {
     "alt": "^0.17.6",
     "express": "^4.13.3",
+    "immutable": "^3.7.5",
     "moment": "^2.10.6",
     "numeral": "^1.5.3",
     "react": "^0.14.0",
