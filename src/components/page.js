@@ -8,6 +8,10 @@ class Page extends React.Component {
             </div>
         );
     }
+
+    shouldComponentUpdate() {
+        return false;
+    }
 }
 
 export default Page;

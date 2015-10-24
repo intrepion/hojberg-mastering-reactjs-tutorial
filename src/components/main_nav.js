@@ -10,6 +10,10 @@ class MainNav extends React.Component {
             </nav>
         );
     }
+
+    shouldComponentUpdate() {
+        return false;
+    }
 }
 
 export default MainNav;
