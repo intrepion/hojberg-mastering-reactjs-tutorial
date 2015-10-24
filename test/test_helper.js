@@ -1,3 +1,4 @@
+import jsdom from 'jsdom';
 import React from 'react/addons';
 const { TestUtils } = React.addons;
 
