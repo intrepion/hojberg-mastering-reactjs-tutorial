@@ -17,7 +17,8 @@ class SalesChartXAxis extends React.Component {
         const xTicks = getXTicks(numDataPoints).map((tick, i) => {
             const x = xScale(i) + leftMargin;
             return <text className='tick' x={x} y={height} key={i}>{tick}</text>
-        })
+        });
+
         return (
             <g>
                 <g className='ticks'>{xTicks}</g>

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/mocha/bin/mocha --compilers js:babel/register --reporter dot --recursive --require ./test/setup.js",
-    "build": "browserify src/main.js -t babelify --outfile public/bundle.js && node-sass --output-style compressed styles/main.scss public/main.css",
+    "build": "browserify src/client.js -t babelify --outfile public/bundle.js && node-sass --output-style compressed styles/main.scss public/main.css",
     "flow": "babel src --out-dir build_flow --blacklist flow && flow build_flow"
   },
   "repository": {
@@ -21,6 +21,7 @@
   "dependencies": {
     "alt": "^0.17.6",
     "d3": "^3.5.6",
+    "ejs": "^2.3.4",
     "express": "^4.13.3",
     "immutable": "^3.7.5",
     "moment": "^2.10.6",
